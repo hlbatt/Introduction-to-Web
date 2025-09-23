@@ -1,0 +1,8 @@
+document.getElementByID
+
+
+function tempCalc(){
+
+
+
+}
