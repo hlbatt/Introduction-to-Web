@@ -1,19 +1,10 @@
-
-//burger menu
-
-const burgermenu = document.querySelector(".menu-toggle");
-const mainnav = document.querySelector(".main-nav");
-let displayvalue = getComputedStyle(burgermenu).getPropertyValue("display")
-
-if (burgermenu !== null){
-  console.log("works");
-  addEventListener("click", function(){
-    mainnav.classList.toggle("main-nav-open");
-    burgermenu.classList.toggle("open");
-    console.log("clicked");
+$(window).ready(function(){
+  $('.menu-toggle').click(function(){
+    //console.log(2);
+    $('.main-nav').toggleClass('main-nav-open',500);
+    $(this).toggleClass('open');
   });
-};
-
+});
 
 //slideshow
 
